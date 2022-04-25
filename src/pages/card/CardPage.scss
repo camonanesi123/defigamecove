@@ -1,0 +1,41 @@
+.card {
+  min-height: 100vh;
+  background-image: url(/assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .game-info {
+    .game-info-item {
+      @apply w-full rounded-xl text-white text-center py-2 px-5;
+      background: #0a1312;
+      .info-title {
+        @apply text-2xl py-1 font-bold;
+      }
+      .info-per {
+        @apply text-2xl font-bold;
+        color: #ff66c4;
+      }
+      .info-text {
+        color: #aaaaaa;
+      }
+    }
+  }
+  .selected {
+    box-shadow: 0px 0px 6px 6px #ff66c4;
+  }
+}
+
+.history-grid {
+  @apply grid grid-cols-6 py-2 border-b-2 border-[#aaaaaa] text-sm;
+  border-color: #aaaaaa;
+}
+
+.history {
+  cursor: pointer;
+  .history-grid:hover {
+    background-color: black;
+  }
+  .history-grid:nth-child(odd) {
+    color: #ff66c4;
+  }
+}
